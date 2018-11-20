@@ -23,11 +23,34 @@
 </head>
 
 <body>
-
-  <div id="app">
-    <todo-item></todo-item>
-    {{message}}
+  <div class="container">
+    <h3>La semaine 16</h3>
   </div>
+
+
+  <div class="container">
+    <div id="application">
+      <div v-for="film in films">
+        <h5>{{film.title}}</h5>
+        <p>{{film.description}}</p>
+        <h6>{{film.title1}}</h6>
+        <p>{{film.description1}}</p>
+      </div>
+      <!-- <div class="container mt-4">
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title"> The Pianist </h5>
+          <p class="card-text"> The Pianist is an action - packed,biography
+            film.It is about Władysław Szpilman’ slife.He was an excellent pianist,but he was a Jew.He lived in the
+            time of the Second World War. </p>
+        </div>
+      </div> -->
+    </div>
+  </div>
+
+
+
+
   <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
